@@ -64,12 +64,18 @@ namespace WpfApp1.Pages
                 }
             }
 
+            Game game = new Game();
+            game.Show();
 
+            Window1 win1 = new Window1();
+            win1.Close();
+
+            this.Visibility = Visibility.Hidden;
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
     }
 }
