@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Configuration;
 using System.Data.SqlClient;
+using WpfApp1.Windows;
 
 namespace WpfApp1.Pages
 {
@@ -60,14 +61,15 @@ namespace WpfApp1.Pages
                     cmd.Parameters.AddWithValue("@power", Power);
                     cmd.Parameters.AddWithValue("@prof", Prof);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Row inserted !! ");
                 }
             }
+
+
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            
         }
     }
 }
