@@ -10,21 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp1.Windows
+namespace WpfApp1.Pages
 {
     /// <summary>
-    /// Interaction logic for Game.xaml
+    /// Interaction logic for LoadGame.xaml
     /// </summary>
-    public partial class Game : Window
+    public partial class LoadGame : Page
     {
-        public Game()
+        public LoadGame()
         {
             InitializeComponent();
-
-            Pages.Game.Home home = new Pages.Game.Home();
-            this.Content = home;
         }
     }
 }

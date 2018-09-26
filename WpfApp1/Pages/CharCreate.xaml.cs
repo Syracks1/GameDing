@@ -40,14 +40,8 @@ namespace WpfApp1.Pages
             string Power = PowerTB.Text;
             string Prof = ProfTB.Text;
 
-            //var query = "INSERT INTO Character(Name, Race, Power, Prof) VALUES (Name, Race, Power, Prof);";
-            //var cmd = new SqlCommand(query);
-            //cmd.Parameters.AddWithValue("Name", Name);
-
             string connectionString = null;
             string sql = null;
-            //String connString = ConfigurationManager.ConnectionStrings["connWebOrdering"].ConnectionString;
-            //SqlConnection sqlConn = new SqlConnection(connString);
             connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=GameDing;Integrated Security=True";
             using (SqlConnection cnn = new SqlConnection(connectionString))
             {
@@ -64,7 +58,7 @@ namespace WpfApp1.Pages
                 }
             }
 
-            Game game = new Game();
+            Windows.Game game = new Windows.Game();
             game.Show();
 
             Window1 win1 = new Window1();

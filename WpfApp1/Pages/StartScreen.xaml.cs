@@ -29,9 +29,18 @@ namespace WpfApp1.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
             Window1 win1 = new Window1();
+            CharCreate create = new CharCreate();
             win1.Show();
+            win1.Content = create;
+        }
+
+        private void Load_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 win1 = new Window1();
+            LoadGame load = new LoadGame();
+            win1.Show();
+            win1.Content = load;
         }
     }
 }

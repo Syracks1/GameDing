@@ -11,7 +11,7 @@
     <Grid>
         <Label Content="GameNaamHere" HorizontalAlignment="Center" Margin="0,-150,0,0" FontSize="35" VerticalAlignment="Center" Width="270" Background="#212121" Foreground="#fff"/>
         <Button Content="New Game" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" FontSize="18" Width="100" Height="auto" BorderThickness="1" BorderBrush="#00c0ff" Background="#212121" Foreground="#00c0ff" Click="Button_Click"/>
-        <Button Content="Load Game" HorizontalAlignment="Center" Margin="0,75,0,0" VerticalAlignment="Center" FontSize="18" Width="100" Height="auto" BorderThickness="1" BorderBrush="#00c0ff" Background="#212121" Foreground="#00c0ff"/>
+        <Button Content="Load Game" HorizontalAlignment="Center" Margin="0,75,0,0" VerticalAlignment="Center" FontSize="18" Width="100" Height="auto" BorderThickness="1" BorderBrush="#00c0ff" Background="#212121" Foreground="#00c0ff" Click="Load_Click"/>
         <Button Content="Options" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Center" FontSize="18" Width="100" Height="auto" BorderThickness="1" BorderBrush="#00c0ff" Background="#212121" Foreground="#00c0ff"/>
     </Grid>
 </Page>

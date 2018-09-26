@@ -25,7 +25,7 @@ namespace WpfApp1.Windows
             InitializeComponent();
 
             CharCreate Char = new CharCreate();
-            this.Content = Char;
+            //this.Content = Char;
 
             //StartScreen start = new StartScreen();
             //this.Content = start;
