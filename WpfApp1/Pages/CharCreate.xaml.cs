@@ -45,6 +45,7 @@ namespace WpfApp1.Pages
             connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=GameDing;Integrated Security=True";
             using (SqlConnection cnn = new SqlConnection(connectionString))
             {
+
                 cnn.Open();
                 sql = "insert into Character ([Name], [Race], [Power], [Prof]) values(@name,@race,@power,@prof)";
                 

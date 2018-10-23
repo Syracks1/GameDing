@@ -9,6 +9,6 @@
       Title="LoadGame" Background="#212121">
 
     <Grid>
-        <Button Content="Savegame 1" HorizontalAlignment="Center" Margin="0,-75,0,0" VerticalAlignment="Center" FontSize="18" Width="100" Height="auto" BorderThickness="1" BorderBrush="#00c0ff" Background="#212121" Foreground="#00c0ff" Click="save_Click"/>
+        <Button Content="Savegame" HorizontalAlignment="Center" Margin="0,-75,0,0" VerticalAlignment="Center" FontSize="18" Width="100" Height="auto" BorderThickness="1" BorderBrush="#00c0ff" Background="#212121" Foreground="#00c0ff" Click="save_Click"/>
     </Grid>
 </Page>

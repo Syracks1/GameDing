@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,10 +30,26 @@ namespace WpfApp1.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Window1 win1 = new Window1();
-            CharCreate create = new CharCreate();
-            win1.Show();
-            win1.Content = create;
+            string connectionString = null;
+            string sql = null;
+            connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=GameDing;Integrated Security=True";
+            using (SqlConnection cnn = new SqlConnection(connectionString))
+            {
+
+                cnn.Open();
+                sql = "TRUNCATE TABLE Character";
+
+                using (SqlCommand cmd = new SqlCommand(sql, cnn))
+                {
+                    cmd.ExecuteNonQuery();
+                }
+
+
+                Window1 win1 = new Window1();
+                CharCreate create = new CharCreate();
+                win1.Show();
+                win1.Content = create;
+            }
         }
 
         private void Load_Click(object sender, RoutedEventArgs e)

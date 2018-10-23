@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,26 @@ namespace WpfApp1.Pages.Game
         public Home()
         {
             InitializeComponent();
+
+            string connectionString = null;
+            string sql = null;
+            connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=GameDing;Integrated Security=True";
+            using (SqlConnection cnn = new SqlConnection(connectionString))
+            {
+
+                cnn.Open();
+                sql = "SELECT Name FROM dbo.Character";
+
+                SqlCommand q = new SqlCommand(sql, cnn);
+                SqlDataReader dr = q.ExecuteReader();
+                dr.Read();
+
+                lbl_name.Content = dr["Name"].ToString();
+
+            }
+
         }
+
     }
+
 }

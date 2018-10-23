@@ -9,6 +9,7 @@
       Title="Home" Background="#212121">
 
     <Grid>
-        
+        <Label x:Name="lbl_name" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Background="White"/>
+
     </Grid>
 </Page>
